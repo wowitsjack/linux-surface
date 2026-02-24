@@ -1,122 +1,85 @@
-# Linux Surface
+# surface-s2idle-fix
 
-Linux running on the Microsoft Surface devices.
-Follow the instructions below to install the latest kernel.
+Kernel module that fixes the s2idle "death sleep" bug on the Microsoft Surface Laptop 5 running Linux.
 
-[Announcements and Updates](https://github.com/linux-surface/linux-surface/issues/96) | [Upstream Status](https://github.com/linux-surface/linux-surface/issues/205)
+Without this module, closing the lid (or any s2idle suspend) results in permanent sleep that requires a 10-second power button hold to recover.
 
-### Why / About this Project
+## What it does
 
-These days, Linux supports a lot of devices out-of-the-box.
-As a matter of fact, this includes a good portion of the Microsoft Surface devices—for most parts at least.
-So why would you need a special kernel for Surface devices?
-In short, for the parts that are not supported upstream yet.
+Masks ACPI GPE 0x52 (lid switch) during s2idle to prevent a spurious interrupt from corrupted GPIO pad configuration. On resume, restores the pad config, unmasks the GPE, and forces a lid state resync so logind sees the correct lid position.
 
-Unfortunately, Surface devices tend to be a bit special.
-This is mostly because some hardware choices Microsoft made are rarely (if at all) used by other, more "standard", devices.
-For example:
-- Surface devices (4th generation and later) use their own embedded controller (the Surface Aggregator Module, or SAM).
-  In contrast to other devices, however, some newer Surface devices route their keyboard and touchpad input via this controller.
-  Unfortunately, every new Surface device requires some (usually small) patch to enable support for it, since devices managed by SAM are generally not auto-discoverable.
-- Surface devices (4th generation and later, excluding the Go series) use a rather special system for touch and pen input.
-  In short, this requires user-space processing of touch and pen data to enable multitouch support and has not been upstreamed yet.
-- Surface devices rely on Intel's ISP for camera image processing.
-  This means that the webcam also requires some user-space processing.
-  While patches are being upstreamed, not all devices are supported (even with this project), and more work remains to be done.
+## The bug
 
-We aim to send all the changes we make here upstream, but this may take time.
-This kernel allows us to ship new features faster, as we do not have to adhere to the upstream release schedule (and, for better or worse, code standards).
-We also rely on it to test and prototype patches before sending them upstream, which is crucial because we maintainers cannot test on all Surface devices (which also means we may break things along the way).
+The Intel INTC1055 pin controller power-gates its pad communities during s2idle idle states. This corrupts the PADCFG0 RXINV (receive invert) bit on pin 213 (the lid switch GPIO). The corrupted bit generates a false edge on GPE 0x52, which fires an SCI. The kernel's s2idle wake handler treats this as a spurious event and calls `pm_system_cancel_wakeup()`, permanently poisoning the wakeup framework. After that, no legitimate wake source (RTC alarm, power button) can wake the system.
 
-_So should you install this custom kernel and the associated packages?_
-It depends: We generally recommend you try your standard distribution kernel first.
-If that works well for you, great!
-But if you're missing any features or experiencing issues, take a look at our [feature matrix](https://github.com/linux-surface/linux-surface/wiki/Supported-Devices-and-Features#feature-matrix) and give our kernel and packages a try.
-If your device is not listed as supported yet, feel free to open an issue.
+## Tested on
 
-### Supported Devices
+- Microsoft Surface Laptop 5 (Intel 12th Gen Alder Lake-U)
+- Arch Linux, kernel 6.18.8-arch2-1-surface (linux-surface)
+- COSMIC desktop environment
 
-* Surface Book
-* Surface Book 2
-* Surface Book 3
-* Surface 3
-* Surface Go
-* Surface Go 2
-* Surface Go 3
-* Surface Laptop
-* Surface Laptop 2
-* Surface Laptop 3
-* Surface Laptop 4
-* Surface Laptop 5
-* Surface Laptop 6
-* Surface Laptop Go
-* Surface Laptop Go 2
-* Surface Laptop Go 3
-* Surface Laptop Studio
-* Surface Laptop Studio 2
-* Surface Pro 1
-* Surface Pro 3
-* Surface Pro 4
-* Surface Pro (5th Gen) / Surface Pro 2017
-* Surface Pro 6
-* Surface Pro 7
-* Surface Pro 7+
-* Surface Pro 8
-* Surface Pro 9
-* Surface Pro 10
-* Surface Studio
+7/7 suspend/resume cycles survived with the module loaded. 0/7 survived without it.
 
-### Features / What's Working
+## Install
 
-See the [feature matrix](https://github.com/linux-surface/linux-surface/wiki/Supported-Devices-and-Features#feature-matrix) for more information about each device.
+```bash
+# Quick install (builds, installs, auto-loads on boot)
+chmod +x install.sh
+./install.sh
+```
 
-### Disclaimer
+### Manual install
 
-* For the most part, things are tested on a Surface Book 2.
-  While most things are reportedly fully working on other devices, your mileage may vary.
-  Please look at the issues list for possible exceptions.
+```bash
+make
+sudo insmod surface_s2idle_fix.ko
+```
 
-## Installation and Setup
+### DKMS install (survives kernel updates)
 
-We provide package repositories for the patched kernel and other utilities.
-Please refer to the [detailed installation and setup guide][wiki-setup].
-There, you may also find device-specific caveats.
-In case you have disk encryption set up or plan to use it, take care to follow the respective instructions in the installation guide and have a look at the respective [wiki page][wiki-encryption].
-After installation, you may want to have a look at the [wiki][wiki] and the `contrib/` directory for useful tweaks.
+```bash
+sudo cp -r . /usr/src/surface-s2idle-fix-1.0.0
+sudo dkms add surface-s2idle-fix/1.0.0
+sudo dkms build surface-s2idle-fix/1.0.0
+sudo dkms install surface-s2idle-fix/1.0.0
+echo "surface_s2idle_fix" | sudo tee /etc/modules-load.d/surface_s2idle_fix.conf
+```
 
-If you want to compile the kernel yourself (e.g. if your distribution is not supported), please have a look at the [wiki][wiki-compiling].
+## Uninstall
 
-## Additional Information
+```bash
+chmod +x uninstall.sh
+./uninstall.sh
+```
 
-### Notes
+## Verify it's working
 
-* If you are getting stuck at boot when loading the ramdisk, you need to install the Processor Microcode Firmware for Intel CPUs (usually found under Additional Drivers in Software and Updates).
-* Using TLP can cause slowdowns, laggy performance, and occasional hangs if not configured properly! You have been warned.
-* If you want to use hibernate instead of suspend, you need to create a swap partition or file, please follow your distribution's instructions (or [here][hibernate-setup]).
+```bash
+# Check module is loaded
+lsmod | grep surface_s2idle_fix
 
-### Support
+# Check dmesg for module messages
+sudo dmesg | grep surface_s2idle_fix
+```
 
-If you have questions or need support, please join our [Matrix Space][matrix-space]!
-This space contains
-- a [support channel][matrix-support] for general support and
-- a [development channel][matrix-development] for all development related questions and discussions.
+You should see something like:
+```
+surface_s2idle_fix: loaded: SCI=9 PADCFG0=0x40080100 RXINV=0
+surface_s2idle_fix:   GPE 0x52 will be masked during s2idle to prevent spurious wake death spiral
+```
+
+After a suspend/resume cycle:
+```
+surface_s2idle_fix: suspend #1: masked GPE 0x52, PADCFG0=0x40080100 RXINV=0
+surface_s2idle_fix: resume #1: lid state resynced via \_GPE._L52
+surface_s2idle_fix: resume #1: unmasked+enabled GPE 0x52, handler_calls=0 padcfg_restores=0 lid_resyncs=1
+```
+
+## Known limitations
+
+- **Lid open does not wake from sleep.** GPE 0x52 is masked during s2idle, so opening the lid won't wake the system. Use the power button to wake. This is a deliberate trade-off vs. permanent death sleep.
+- Only tested on Surface Laptop 5. May work on other Surface devices with the same Intel INTC1055 pin controller, but the PADCFG physical addresses are hardcoded and would need adjusting.
 
 ## License
-This repository contains patches, which are either derivative work targeting a specific already licensed source, i.e. parts of the Linux kernel, or introduce new parts to the Linux kernel.
-These patches fall thus, if not explicitly stated otherwise, under the license of the source they are targeting, or if they introduce new code, the license they explicitly specify inside of the patch.
-Please refer to the specific patch and source in question for further information.
-License texts can be obtained at https://github.com/torvalds/linux/tree/master/LICENSES.
 
-[wiki]: https://github.com/linux-surface/linux-surface/wiki
-[wiki-setup]: https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup
-[wiki-compiling]: https://github.com/linux-surface/linux-surface/wiki/Compiling-the-Kernel-from-Source
-[wiki-encryption]: https://github.com/linux-surface/linux-surface/wiki/Disk-Encryption
-
-[matrix-space]: https://matrix.to/#/#linux-surface:matrix.org
-[matrix-support]: https://matrix.to/#/#linux-surface-support:matrix.org
-[matrix-development]: https://matrix.to/#/#linux-surface-development:matrix.org
-
-[hibernate-setup]: https://fitzcarraldoblog.wordpress.com/2018/07/14/configuring-lubuntu-18-04-to-enable-hibernation-using-a-swap-file
-[releases]: https://github.com/linux-surface/linux-surface/releases
-
-[linux-surface-kernel]: https://github.com/linux-surface/kernel/
+GPL-2.0
