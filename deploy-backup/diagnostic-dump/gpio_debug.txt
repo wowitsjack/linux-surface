@@ -1,0 +1,2 @@
+gpiochip0: 360 GPIOs, parent: platform/INTC1055:00, INTC1055:00:
+ gpio-174 (                    |interrupt           ) in  lo IRQ 

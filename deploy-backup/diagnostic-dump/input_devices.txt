@@ -1,0 +1,226 @@
+I: Bus=0019 Vendor=0000 Product=0005 Version=0000
+N: Name="Lid Switch"
+P: Phys=PNP0C0D/button/input0
+S: Sysfs=/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0
+U: Uniq=
+H: Handlers=event0 
+B: PROP=0
+B: EV=21
+B: SW=1
+
+I: Bus=0019 Vendor=045e Product=09ae Version=0111
+N: Name="Microsoft Surface 045E:09AE"
+P: Phys=01:15:02:01:00
+S: Sysfs=/devices/platform/MSHW0350:00/01:15:02:01:00/0019:045E:09AE.0004/input/input13
+U: Uniq=
+H: Handlers=sysrq kbd event9 surface_s2idle_pwr leds 
+B: PROP=0
+B: EV=12001f
+B: KEY=3f00033fff 0 0 483ffff17aff32d bfd4444600000000 1 130ff38b17d007 ffe77bfad9415fff ffbeffdff3cfffff fffffffffffffffe
+B: REL=1040
+B: ABS=100000000
+B: MSC=10
+B: LED=7
+
+I: Bus=0019 Vendor=045e Product=09af Version=0111
+N: Name="Microsoft Surface 045E:09AF Mouse"
+P: Phys=01:15:02:03:00
+S: Sysfs=/devices/platform/MSHW0350:00/01:15:02:03:00/0019:045E:09AF.0005/input/input14
+U: Uniq=
+H: Handlers=mouse2 event10 
+B: PROP=0
+B: EV=17
+B: KEY=30000 0 0 0 0
+B: REL=3
+B: MSC=10
+
+I: Bus=0019 Vendor=045e Product=09af Version=0111
+N: Name="Microsoft Surface 045E:09AF Touchpad"
+P: Phys=01:15:02:03:00
+S: Sysfs=/devices/platform/MSHW0350:00/01:15:02:03:00/0019:045E:09AF.0005/input/input16
+U: Uniq=
+H: Handlers=mouse3 event11 
+B: PROP=5
+B: EV=1b
+B: KEY=e520 10000 0 0 0 0
+B: ABS=2e0800000000003
+B: MSC=20
+
+I: Bus=0019 Vendor=0000 Product=0006 Version=0000
+N: Name="Video Bus"
+P: Phys=LNXVIDEO/video/input0
+S: Sysfs=/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input17
+U: Uniq=
+H: Handlers=kbd event12 
+B: PROP=0
+B: EV=3
+B: KEY=3e000b00000000 0 0 0
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH Mic"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input18
+U: Uniq=
+H: Handlers=event13 
+B: PROP=0
+B: EV=21
+B: SW=10
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH Headphone"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input19
+U: Uniq=
+H: Handlers=event14 
+B: PROP=0
+B: EV=21
+B: SW=4
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH HDMI/DP,pcm=3"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input20
+U: Uniq=
+H: Handlers=event15 
+B: PROP=0
+B: EV=21
+B: SW=140
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH HDMI/DP,pcm=7"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input21
+U: Uniq=
+H: Handlers=event16 
+B: PROP=0
+B: EV=21
+B: SW=140
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH HDMI/DP,pcm=8"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input22
+U: Uniq=
+H: Handlers=event17 
+B: PROP=0
+B: EV=21
+B: SW=140
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="HDA Intel PCH HDMI/DP,pcm=9"
+P: Phys=ALSA
+S: Sysfs=/devices/pci0000:00/0000:00:1f.3/sound/card0/input23
+U: Uniq=
+H: Handlers=event18 
+B: PROP=0
+B: EV=21
+B: SW=140
+
+I: Bus=0001 Vendor=045e Product=0c5a Version=0100
+N: Name="Intel Touch Host Controller"
+P: Phys=pci-0000:00:10.6/ithc
+S: Sysfs=/devices/pci0000:00/0000:00:10.6/0001:045E:0C5A.000A/input/input66
+U: Uniq=
+H: Handlers=event1 
+B: PROP=0
+B: EV=9
+B: ABS=10000000000
+
+I: Bus=0001 Vendor=045e Product=0c5a Version=0100
+N: Name="Intel Touch Host Controller"
+P: Phys=pci-0000:00:10.6/ithc
+S: Sysfs=/devices/pci0000:00/0000:00:10.6/0001:045E:0C5A.000A/input/input67
+U: Uniq=
+H: Handlers=event2 
+B: PROP=0
+B: EV=9
+B: ABS=10000000000
+
+I: Bus=0001 Vendor=045e Product=0c5a Version=0100
+N: Name="Intel Touch Host Controller"
+P: Phys=pci-0000:00:10.6/ithc
+S: Sysfs=/devices/pci0000:00/0000:00:10.6/0001:045E:0C5A.000A/input/input68
+U: Uniq=
+H: Handlers=event3 
+B: PROP=0
+B: EV=9
+B: ABS=10000000000
+
+I: Bus=0001 Vendor=045e Product=0c5a Version=0100
+N: Name="Intel Touch Host Controller Touchscreen"
+P: Phys=pci-0000:00:10.6/ithc
+S: Sysfs=/devices/pci0000:00/0000:00:10.6/0001:045E:0C5A.000A/input/input69
+U: Uniq=
+H: Handlers=mouse0 event4 
+B: PROP=0
+B: EV=1b
+B: KEY=400 0 0 0 0 0
+B: ABS=3
+B: MSC=10
+
+I: Bus=0001 Vendor=045e Product=0c5a Version=0100
+N: Name="Intel Touch Host Controller"
+P: Phys=pci-0000:00:10.6/ithc
+S: Sysfs=/devices/pci0000:00/0000:00:10.6/0001:045E:0C5A.000A/input/input70
+U: Uniq=
+H: Handlers=event5 
+B: PROP=0
+B: EV=1b
+B: KEY=1 0 0 0 0
+B: ABS=10000000000
+B: MSC=10
+
+I: Bus=0001 Vendor=045e Product=0c5a Version=0100
+N: Name="Intel Touch Host Controller"
+P: Phys=pci-0000:00:10.6/ithc
+S: Sysfs=/devices/pci0000:00/0000:00:10.6/0001:045E:0C5A.000A/input/input71
+U: Uniq=
+H: Handlers=event6 
+B: PROP=0
+B: EV=9
+B: ABS=10000000000
+
+I: Bus=0001 Vendor=045e Product=0c5a Version=0100
+N: Name="Intel Touch Host Controller Stylus"
+P: Phys=pci-0000:00:10.6/ithc
+S: Sysfs=/devices/pci0000:00/0000:00:10.6/0001:045E:0C5A.000A/input/input72
+U: Uniq=
+H: Handlers=mouse1 event7 
+B: PROP=2
+B: EV=1b
+B: KEY=c03 0 0 0 0 0
+B: ABS=1000d000003
+B: MSC=10
+
+I: Bus=0001 Vendor=045e Product=0c5a Version=0100
+N: Name="Intel Touch Host Controller"
+P: Phys=pci-0000:00:10.6/ithc
+S: Sysfs=/devices/pci0000:00/0000:00:10.6/0001:045E:0C5A.000A/input/input73
+U: Uniq=
+H: Handlers=event8 
+B: PROP=0
+B: EV=9
+B: ABS=10000000000
+
+I: Bus=0006 Vendor=045e Product=0c5a Version=0000
+N: Name="IPTSD Virtual Touchscreen 045E:0C5A"
+P: Phys=
+S: Sysfs=/devices/virtual/input/input74
+U: Uniq=
+H: Handlers=mouse6 event21 
+B: PROP=2
+B: EV=b
+B: KEY=400 0 0 0 0 0
+B: ABS=273800000000003
+
+I: Bus=0006 Vendor=045e Product=0c5a Version=0000
+N: Name="IPTSD Virtual Stylus 045E:0C5A"
+P: Phys=
+S: Sysfs=/devices/virtual/input/input75
+U: Uniq=
+H: Handlers=mouse7 event22 
+B: PROP=3
+B: EV=b
+B: KEY=c03 0 0 0 0 0
+B: ABS=1000d000003
+

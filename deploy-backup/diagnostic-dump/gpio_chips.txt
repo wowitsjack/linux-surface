@@ -1,0 +1,7 @@
+=== gpiochip512 ===
+512
+ base
+360
+ ngpio
+INTC1055:00
+ label

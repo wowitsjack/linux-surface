@@ -1,0 +1,111 @@
+00000000-00000fff : Reserved
+00001000-0009ffff : System RAM
+000a0000-000fffff : Reserved
+  000a0000-000fffff : PCI Bus 0000:00
+    000c0000-000dffff : 0000:00:02.0
+    000f0000-000fffff : System ROM
+00100000-3868dfff : System RAM
+  0b000000-2affffff : Crash kernel
+3868e000-386bafff : Reserved
+386bb000-3878afff : System RAM
+3878b000-3878bfff : Reserved
+3878c000-49498fff : System RAM
+49499000-49898fff : Reserved
+49899000-498c3fff : System RAM
+498c4000-49b2efff : Reserved
+49b2f000-49b5efff : ACPI Non-volatile Storage
+49b5f000-49bfefff : ACPI Tables
+49bff000-49bfffff : System RAM
+49c00000-4dffffff : Reserved
+4e800000-4e9fffff : Reserved
+4f000000-543fffff : Reserved
+  50800000-543fffff : Graphics Stolen Memory
+54400000-bfffffff : PCI Bus 0000:00
+  54400000-54400fff : 0000:00:1f.5
+    54400000-54400fff : spi_intel_pci
+  56000000-621fffff : PCI Bus 0000:02
+  62200000-622fffff : PCI Bus 0000:01
+    62200000-62203fff : 0000:01:00.0
+      62200000-62203fff : nvme
+c0000000-cfffffff : PCI ECAM 0000 [bus 00-ff]
+  c0000000-cfffffff : pnp 00:00
+fd690000-fd69ffff : INTC1055:00
+  fd690000-fd69ffff : INTC1055:00 INTC1055:00
+fd6a0000-fd6affff : INTC1055:00
+  fd6a0000-fd6affff : INTC1055:00 INTC1055:00
+fd6d0000-fd6dffff : INTC1055:00
+  fd6d0000-fd6dffff : INTC1055:00 INTC1055:00
+fd6e0000-fd6effff : INTC1055:00
+  fd6e0000-fd6effff : INTC1055:00 INTC1055:00
+fe010000-fe010fff : Reserved
+fec00000-fec003ff : IOAPIC 0
+fed00000-fed003ff : HPET 0
+fed40000-fed44fff : NTC0702:00
+  fed40000-fed44fff : NTC0702:00 NTC0702:00
+fed45000-fed8ffff : pnp 00:00
+fed90000-fed90fff : dmar0
+fed91000-fed91fff : dmar1
+feda0000-feda0fff : pnp 00:00
+feda1000-feda1fff : pnp 00:00
+fedc0000-fedc7fff : pnp 00:00
+fee00000-feefffff : pnp 00:00
+100000000-8abbfffff : System RAM
+  77c200000-77d60e5af : Kernel code
+  77d800000-77e069fff : Kernel rodata
+  77e200000-77e55f03f : Kernel data
+  77ea74000-77effffff : Kernel bss
+8abc00000-8abffffff : RAM buffer
+4000000000-7fffffffff : PCI Bus 0000:00
+  4000000000-400fffffff : 0000:00:02.0
+  4010000000-4010000fff : 0000:00:10.0
+    4010000000-40100001ff : lpss_dev
+      4010000000-40100001ff : i2c_designware.0 lpss_dev
+    4010000200-40100002ff : lpss_priv
+  4010001000-4010001fff : 0000:00:15.0
+    4010001000-40100011ff : lpss_dev
+      4010001000-40100011ff : i2c_designware.1 lpss_dev
+    4010001200-40100012ff : lpss_priv
+    4010001800-4010001fff : idma64.1
+      4010001800-4010001fff : idma64.1 idma64.1
+  4010002000-4010002fff : 0000:00:19.0
+    4010002000-40100021ff : lpss_dev
+      4010002000-40100021ff : i2c_designware.2 lpss_dev
+    4010002200-40100022ff : lpss_priv
+    4010002800-4010002fff : idma64.2
+      4010002800-4010002fff : idma64.2 idma64.2
+  4010003000-4010003fff : 0000:00:1e.0
+    4010003000-40100031ff : lpss_dev
+      4010003000-40100031ff : serial
+    4010003200-40100032ff : lpss_priv
+    4010003800-4010003fff : idma64.3
+      4010003800-4010003fff : idma64.3 idma64.3
+  6000000000-60dfffffff : 0000:00:02.0
+  60e0000000-60fbffffff : PCI Bus 0000:02
+  60fc000000-6102ffffff : 0000:00:02.0
+  6103000000-6103ffffff : 0000:00:02.0
+  6104000000-61040fffff : 0000:00:1f.3
+  6104100000-610413ffff : 0000:00:0d.3
+    6104100000-610413ffff : thunderbolt
+  6104140000-610414ffff : 0000:00:14.0
+    6104140000-610414ffff : xhci-hcd
+  6104150000-610415ffff : 0000:00:0d.0
+    6104150000-610415ffff : xhci-hcd
+  6104160000-6104167fff : 0000:00:0a.0
+    6104164000-6104164abf : telem1
+    6104164ac0-6104164bff : telem2
+    61041664d8-61041664e7 : intel_vsec.telemetry.0
+    61041664e8-61041664f7 : intel_vsec.telemetry.0
+    61041664f8-6104166507 : intel_vsec.telemetry.0
+    6104166508-6104166517 : intel_vsec.telemetry.0
+  6104170000-6104177fff : 0000:00:10.6
+    6104170000-6104177fff : ithc regs
+  6104178000-610417bfff : 0000:00:1f.3
+    6104178000-610417bfff : ICH HD audio
+  610417c000-610417ffff : 0000:00:14.3
+    610417c000-610417ffff : iwlwifi
+  6104180000-6104183fff : 0000:00:14.2
+  6104186000-6104186fff : 0000:00:16.0
+    6104186000-6104186fff : mei_me
+  6104188000-6104188fff : 0000:00:14.2
+  610418a000-610418afff : 0000:00:0d.3
+  610418b000-610418bfff : 0000:00:08.0

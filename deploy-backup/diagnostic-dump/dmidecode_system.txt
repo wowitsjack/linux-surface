@@ -1,0 +1,15 @@
+# dmidecode 3.6
+Getting SMBIOS data from sysfs.
+SMBIOS 3.6.0 present.
+
+Handle 0x0014, DMI type 1, 27 bytes
+System Information
+	Manufacturer: Microsoft Corporation
+	Product Name: Surface Laptop 5
+	Version: 124I:00099T:000M:0200000D:0B:04F:1C:04P:01Y:1U:08S:1
+	Serial Number: 0F01C9H22413FB
+	UUID: 7343f552-f6d2-0648-c603-0521fd57bd07
+	Wake-up Type: Unknown
+	SKU Number: Surface_Laptop_5_for_Business_1979
+	Family: Surface
+

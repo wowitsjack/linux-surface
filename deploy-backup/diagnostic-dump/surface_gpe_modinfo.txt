@@ -1,0 +1,10 @@
+filename:       /lib/modules/6.18.7-surface-1/extra/surface_gpe.ko
+alias:          dmi:*:svnMicrosoftCorporation:pnSurface*:*
+license:        GPL
+description:    Surface GPE/Lid Driver
+author:         Maximilian Luz <luzmaximilian@gmail.com>
+srcversion:     1A4AC8F451D143E8B59A0A6
+depends:        
+name:           surface_gpe
+retpoline:      Y
+vermagic:       6.18.7-surface-1 SMP preempt mod_unload modversions 

@@ -1,0 +1,2 @@
+Requested pin control handlers their pinmux maps:
+device: INTC1055:00 current state: none

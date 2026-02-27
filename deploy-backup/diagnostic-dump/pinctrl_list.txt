@@ -1,0 +1,4 @@
+INTC1055:00
+pinctrl-devices
+pinctrl-handles
+pinctrl-maps

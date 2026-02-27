@@ -1,0 +1,1 @@
+BOOT_IMAGE=/vmlinuz-6.18.7-surface-1 root=UUID=d3dae443-4b13-4b50-a5dc-ce536d9b4788 ro quiet splash crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M vt.handoff=7

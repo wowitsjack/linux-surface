@@ -1,0 +1,3 @@
+Substate   Residency      
+S0i2.0     0              
+S0i3.0     0              

@@ -1,0 +1,70 @@
+Device	S-state	  Status   Sysfs node
+PEG0	  S4	*enabled   pci:0000:00:06.0
+PEGP	  S4	*disabled  pci:0000:01:00.0
+PEG1	  S4	*disabled
+PEGP	  S4	*disabled
+PEG2	  S4	*disabled
+PEGP	  S4	*disabled
+XHCI	  S4	*enabled   pci:0000:00:14.0
+XDCI	  S4	*disabled
+HDAS	  S4	*disabled  pci:0000:00:1f.3
+CNVW	  S4	*disabled  pci:0000:00:14.3
+RP01	  S4	*disabled
+PXSX	  S4	*disabled
+RP02	  S4	*disabled
+PXSX	  S4	*disabled
+RP03	  S4	*disabled
+PXSX	  S4	*disabled
+RP04	  S4	*disabled
+PXSX	  S4	*disabled
+RP05	  S4	*disabled
+PXSX	  S4	*disabled
+RP06	  S4	*disabled
+PXSX	  S4	*disabled
+RP07	  S4	*disabled
+PXSX	  S4	*disabled
+RP08	  S4	*disabled
+PXSX	  S4	*disabled
+RP09	  S4	*disabled
+PXSX	  S4	*disabled
+RP10	  S4	*disabled
+PXSX	  S4	*disabled
+RP11	  S4	*disabled
+PXSX	  S4	*disabled
+RP12	  S4	*disabled
+PXSX	  S4	*disabled
+RP13	  S4	*disabled
+PXSX	  S4	*disabled
+RP14	  S4	*disabled
+PXSX	  S4	*disabled
+RP15	  S4	*disabled
+PXSX	  S4	*disabled
+RP16	  S4	*disabled
+PXSX	  S4	*disabled
+RP17	  S4	*disabled
+PXSX	  S4	*disabled
+RP18	  S4	*disabled
+PXSX	  S4	*disabled
+RP19	  S4	*disabled
+PXSX	  S4	*disabled
+RP20	  S4	*disabled
+PXSX	  S4	*disabled
+RP21	  S4	*disabled
+PXSX	  S4	*disabled
+RP22	  S4	*disabled
+PXSX	  S4	*disabled
+RP23	  S4	*disabled
+PXSX	  S4	*disabled
+RP24	  S4	*disabled
+PXSX	  S4	*disabled
+TXHC	  S4	*enabled   pci:0000:00:0d.0
+TDM0	  S4	*disabled
+TDM1	  S4	*enabled   pci:0000:00:0d.3
+TRP0	  S4	*disabled
+PXSX	  S4	*disabled
+TRP1	  S4	*disabled
+PXSX	  S4	*disabled
+TRP2	  S4	*enabled   pci:0000:00:07.0
+PXSX	  S4	*disabled
+TRP3	  S4	*disabled
+PXSX	  S4	*disabled

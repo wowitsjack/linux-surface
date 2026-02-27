@@ -1,0 +1,11 @@
+lpm_latch_mode
+ltr_ignore
+ltr_restore
+ltr_show
+package_cstate_show
+pch_ip_power_gating_status
+slp_s0_residency_usec
+substate_live_status_registers
+substate_requirements
+substate_residencies
+substate_status_registers

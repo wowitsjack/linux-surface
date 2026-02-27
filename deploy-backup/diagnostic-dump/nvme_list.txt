@@ -1,0 +1,1 @@
+NO_NVME_CLI

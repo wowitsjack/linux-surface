@@ -1,0 +1,248 @@
+total 0
+drwxr-xr-x  3 root root    0 Feb 27  2026 .
+drwxr-xr-x 25 root root    0 Feb 27  2026 ..
+-rw-r--r--  1 root root 4096 Feb 27 12:46 driver_override
+lrwxrwxrwx  1 root root    0 Feb 27 12:46 firmware_node -> ../../LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00
+-r--r--r--  1 root root 4096 Feb 27 12:46 modalias
+drwxr-xr-x  2 root root    0 Feb 27 12:46 power
+lrwxrwxrwx  1 root root    0 Feb 27  2026 subsystem -> ../../../bus/platform
+-rw-r--r--  1 root root 4096 Feb 27  2026 uevent
+-r--r--r--  1 root root 4096 Feb 27 12:46 waiting_for_supplier
+-rw-r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/platform/PNP0C0D:00/uevent
+lrwxrwxrwx 1 root root 0 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/firmware_node -> ../../LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00
+total 0
+drwxr-xr-x 2 root root    0 Feb 27 12:46 .
+drwxr-xr-x 3 root root    0 Feb 27  2026 ..
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 async
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 control
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_active_kids
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_active_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_enabled
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_status
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_suspended_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_usage
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/power/runtime_active_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/power/runtime_active_kids
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/power/runtime_usage
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/power/runtime_status
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/power/autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/power/async
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/power/runtime_suspended_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/power/runtime_enabled
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/power/control
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/driver_override
+lrwxrwxrwx 1 root root 0 Feb 27  2026 /sys/devices/platform/PNP0C0D:00/subsystem -> ../../../bus/platform
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/waiting_for_supplier
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/platform/PNP0C0D:00/modalias
+total 0
+drwxr-xr-x  5 root root    0 Feb 27 12:46 .
+drwxr-xr-x 97 root root    0 Feb 27  2026 ..
+lrwxrwxrwx  1 root root    0 Feb 27  2026 driver -> ../../../../bus/acpi/drivers/button
+-r--r--r--  1 root root 4096 Feb 27 12:46 hid
+drwxr-xr-x  3 root root    0 Feb 27  2026 input
+-r--r--r--  1 root root 4096 Feb 27 12:46 modalias
+-r--r--r--  1 root root 4096 Feb 27 12:46 path
+lrwxrwxrwx  1 root root    0 Feb 27 12:46 physical_node -> ../../../platform/PNP0C0D:00
+drwxr-xr-x  2 root root    0 Feb 27 12:46 power
+-r--r--r--  1 root root 4096 Feb 27 12:46 status
+lrwxrwxrwx  1 root root    0 Feb 27  2026 subsystem -> ../../../../bus/acpi
+-rw-r--r--  1 root root 4096 Feb 27  2026 uevent
+drwxr-xr-x  3 root root    0 Feb 27  2026 wakeup
+-rw-r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/uevent
+total 0
+drwxr-xr-x 3 root root 0 Feb 27  2026 .
+drwxr-xr-x 5 root root 0 Feb 27 12:46 ..
+drwxr-xr-x 2 root root 0 Feb 27  2026 wakeup21
+total 0
+drwxr-xr-x 2 root root    0 Feb 27  2026 .
+drwxr-xr-x 3 root root    0 Feb 27  2026 ..
+-r--r--r-- 1 root root 4096 Feb 27 12:46 active_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 active_time_ms
+lrwxrwxrwx 1 root root    0 Feb 27 12:46 device -> ../../../PNP0C0D:00
+-r--r--r-- 1 root root 4096 Feb 27 12:46 event_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 expire_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 last_change_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 max_time_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 name
+-r--r--r-- 1 root root 4096 Feb 27 12:46 prevent_suspend_time_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 relax_count
+lrwxrwxrwx 1 root root    0 Feb 27  2026 subsystem -> ../../../../../../class/wakeup
+-r--r--r-- 1 root root 4096 Feb 27 12:46 total_time_ms
+-rw-r--r-- 1 root root 4096 Feb 27  2026 uevent
+-r--r--r-- 1 root root 4096 Feb 27 12:46 wakeup_count
+-rw-r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/uevent
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/event_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/max_time_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/wakeup_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/total_time_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/expire_count
+lrwxrwxrwx 1 root root 0 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/device -> ../../../PNP0C0D:00
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/active_count
+lrwxrwxrwx 1 root root 0 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/subsystem -> ../../../../../../class/wakeup
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/last_change_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/prevent_suspend_time_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/relax_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/name
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/wakeup/wakeup21/active_time_ms
+total 0
+drwxr-xr-x 2 root root    0 Feb 27 12:46 .
+drwxr-xr-x 5 root root    0 Feb 27 12:46 ..
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 async
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 control
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_active_kids
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_active_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_enabled
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_status
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_suspended_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_usage
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 wakeup
+-r--r--r-- 1 root root 4096 Feb 27 12:46 wakeup_abort_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 wakeup_active
+-r--r--r-- 1 root root 4096 Feb 27 12:46 wakeup_active_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 wakeup_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 wakeup_expire_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 wakeup_last_time_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 wakeup_max_time_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 wakeup_total_time_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/runtime_active_time
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/wakeup
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/wakeup_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/wakeup_abort_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/wakeup_expire_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/runtime_active_kids
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/wakeup_total_time_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/wakeup_active_count
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/runtime_usage
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/runtime_status
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/async
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/runtime_suspended_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/wakeup_max_time_ms
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/wakeup_active
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/runtime_enabled
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/control
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/power/wakeup_last_time_ms
+lrwxrwxrwx 1 root root 0 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/physical_node -> ../../../platform/PNP0C0D:00
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/hid
+lrwxrwxrwx 1 root root 0 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/driver -> ../../../../bus/acpi/drivers/button
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/path
+lrwxrwxrwx 1 root root 0 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/subsystem -> ../../../../bus/acpi
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/status
+total 0
+drwxr-xr-x 3 root root 0 Feb 27  2026 .
+drwxr-xr-x 5 root root 0 Feb 27 12:46 ..
+drwxr-xr-x 6 root root 0 Feb 27  2026 input0
+total 0
+drwxr-xr-x 6 root root    0 Feb 27  2026 .
+drwxr-xr-x 3 root root    0 Feb 27  2026 ..
+drwxr-xr-x 2 root root    0 Feb 27  2026 capabilities
+lrwxrwxrwx 1 root root    0 Feb 27 12:46 device -> ../../../PNP0C0D:00
+drwxr-xr-x 3 root root    0 Feb 27  2026 event0
+drwxr-xr-x 2 root root    0 Feb 27  2026 id
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 inhibited
+-r--r--r-- 1 root root 4096 Feb 27 12:46 modalias
+-r--r--r-- 1 root root 4096 Feb 27  2026 name
+-r--r--r-- 1 root root 4096 Feb 27  2026 phys
+drwxr-xr-x 2 root root    0 Feb 27 12:46 power
+-r--r--r-- 1 root root 4096 Feb 27  2026 properties
+lrwxrwxrwx 1 root root    0 Feb 27  2026 subsystem -> ../../../../../../class/input
+-rw-r--r-- 1 root root 4096 Feb 27  2026 uevent
+-r--r--r-- 1 root root 4096 Feb 27 12:46 uniq
+-rw-r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/uevent
+total 0
+drwxr-xr-x 2 root root    0 Feb 27  2026 .
+drwxr-xr-x 6 root root    0 Feb 27  2026 ..
+-r--r--r-- 1 root root 4096 Feb 27  2026 abs
+-r--r--r-- 1 root root 4096 Feb 27  2026 ev
+-r--r--r-- 1 root root 4096 Feb 27 12:46 ff
+-r--r--r-- 1 root root 4096 Feb 27  2026 key
+-r--r--r-- 1 root root 4096 Feb 27 12:46 led
+-r--r--r-- 1 root root 4096 Feb 27 12:46 msc
+-r--r--r-- 1 root root 4096 Feb 27  2026 rel
+-r--r--r-- 1 root root 4096 Feb 27 12:46 snd
+-r--r--r-- 1 root root 4096 Feb 27  2026 sw
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/capabilities/rel
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/capabilities/abs
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/capabilities/ff
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/capabilities/led
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/capabilities/sw
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/capabilities/key
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/capabilities/msc
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/capabilities/snd
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/capabilities/ev
+total 0
+drwxr-xr-x 2 root root    0 Feb 27 12:46 .
+drwxr-xr-x 6 root root    0 Feb 27  2026 ..
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 async
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 control
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_active_kids
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_active_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_enabled
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_status
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_suspended_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_usage
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/power/runtime_active_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/power/runtime_active_kids
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/power/runtime_usage
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/power/runtime_status
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/power/autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/power/async
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/power/runtime_suspended_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/power/runtime_enabled
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/power/control
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/uniq
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/inhibited
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/properties
+total 0
+drwxr-xr-x 2 root root    0 Feb 27  2026 .
+drwxr-xr-x 6 root root    0 Feb 27  2026 ..
+-r--r--r-- 1 root root 4096 Feb 27  2026 bustype
+-r--r--r-- 1 root root 4096 Feb 27  2026 product
+-r--r--r-- 1 root root 4096 Feb 27  2026 vendor
+-r--r--r-- 1 root root 4096 Feb 27  2026 version
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/id/bustype
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/id/vendor
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/id/product
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/id/version
+lrwxrwxrwx 1 root root 0 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/device -> ../../../PNP0C0D:00
+lrwxrwxrwx 1 root root 0 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/subsystem -> ../../../../../../class/input
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/phys
+-r--r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/name
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/modalias
+total 0
+drwxr-xr-x 3 root root    0 Feb 27  2026 .
+drwxr-xr-x 6 root root    0 Feb 27  2026 ..
+-r--r--r-- 1 root root 4096 Feb 27 12:46 dev
+lrwxrwxrwx 1 root root    0 Feb 27 12:46 device -> ../../input0
+drwxr-xr-x 2 root root    0 Feb 27 12:46 power
+lrwxrwxrwx 1 root root    0 Feb 27  2026 subsystem -> ../../../../../../../class/input
+-rw-r--r-- 1 root root 4096 Feb 27  2026 uevent
+-rw-r--r-- 1 root root 4096 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/uevent
+total 0
+drwxr-xr-x 2 root root    0 Feb 27 12:46 .
+drwxr-xr-x 3 root root    0 Feb 27  2026 ..
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 async
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 control
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_active_kids
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_active_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_enabled
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_status
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_suspended_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 runtime_usage
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/power/runtime_active_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/power/runtime_active_kids
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/power/runtime_usage
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/power/runtime_status
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/power/autosuspend_delay_ms
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/power/async
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/power/runtime_suspended_time
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/power/runtime_enabled
+-rw-r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/power/control
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/dev
+lrwxrwxrwx 1 root root 0 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/device -> ../../input0
+lrwxrwxrwx 1 root root 0 Feb 27  2026 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0/event0/subsystem -> ../../../../../../../class/input
+-r--r--r-- 1 root root 4096 Feb 27 12:46 /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/modalias

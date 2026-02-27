@@ -1,0 +1,7 @@
+/sys/kernel/software_nodes/node1/surface_gpe
+/sys/devices/platform/surface_gpe
+/sys/bus/platform/devices/surface_gpe
+/sys/bus/platform/drivers/surface_gpe
+/sys/bus/platform/drivers/surface_gpe/surface_gpe
+/sys/module/surface_gpe
+/sys/module/surface_gpe/drivers/platform:surface_gpe
