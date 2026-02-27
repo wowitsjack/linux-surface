@@ -1,0 +1,48 @@
+# Working dmesg output from Surface Laptop 5
+# Kernel: 6.18.7-surface-1
+# Date: 2026-02-27
+# Module: surface_s2idle_fix (zero-bounce lid wake, GPE promotion suppression)
+#
+# This shows: boot -> lid close -> sleep -> lid open -> clean wake
+# with only 1 bounce cycle (down from 3-4 before the fix)
+
+[    1.594465] surface_s2idle_fix: LPS0 s2idle hooks registered
+[    1.594468] surface_s2idle_fix: loaded: SCI=9 PADCFG0=0x40080100 RXINV=0 RXSTATE=0 pwr_handler=OK resume_early=YES lps0=OK
+[    1.594469] surface_s2idle_fix:   GPE 0x52 masked during s2idle, failsafe 2000ms, resync 1000ms interval (max 120 polls), lid poll 2000ms
+[    2.074329] surface_s2idle_fix: input connected: Microsoft Surface 045E:09AE Keyboard
+[    2.156868] surface_s2idle_fix: input disconnected: Microsoft Surface 045E:09AE Keyboard
+[    2.221282] surface_s2idle_fix: input connected: Microsoft Surface 045E:09AE
+[   87.577065] surface_s2idle_fix: lid poll: RXSTATE 0->1 (PADCFG0=0x40880102)
+[   87.577075] surface_s2idle_fix: lid poll: suspending
+[   87.581432] surface_s2idle_fix: suspend #1: masked GPE 0x52, PADCFG0=0x40880102 RXINV=1 RXSTATE=1 lid_closed=1 failsafe_in_progress=1
+[   88.055176] surface_s2idle_fix: lps0_prepare: GPE 0x52 unmasked for lid wake
+[   97.235867] surface_s2idle_fix: lps0_restore: 1 checks during s2idle
+[   97.266424] surface_s2idle_fix: resume_noirq: PADCFG0 OK (0x40880100)
+[   97.396751] surface_s2idle_fix: early resume: PADCFG0 OK (0x40880100)
+[   97.396769] surface_s2idle_fix: early resume: unmasked GPE 0x52
+[   97.805311] surface_s2idle_fix: resume: rapid wake (1047ms), streak=1
+[   97.805315] surface_s2idle_fix: resume: backoff active, failsafe in 4000ms
+[   97.805387] surface_s2idle_fix: resume #1: PADCFG0=0x40880100 RXSTATE=0 lid_closed=1 handler_calls=1 restores=0 early_restores=0
+[   98.012880] surface_s2idle_fix: suspend #2: masked GPE 0x52, PADCFG0=0x40880100 RXINV=1 RXSTATE=0 lid_closed=1 failsafe_in_progress=0
+[   98.210533] surface_s2idle_fix: lps0_prepare: GPE 0x52 unmasked for lid wake
+[   98.210636] surface_s2idle_fix: lps0_check: lid opened (RXSTATE=0), waking (check #1)
+[   98.210999] surface_s2idle_fix: lps0_restore: 1 checks during s2idle
+[   98.237994] surface_s2idle_fix: resume_noirq: PADCFG0 OK (0x40880100)
+[   98.360997] surface_s2idle_fix: early resume: PADCFG0 OK (0x40880100)
+[   98.361015] surface_s2idle_fix: early resume: unmasked GPE 0x52
+[   98.624192] surface_s2idle_fix: resume: rapid wake (611ms), streak=2
+[   98.624197] surface_s2idle_fix: resume: backoff active, failsafe in 8000ms
+[   98.624302] surface_s2idle_fix: resume #2: PADCFG0=0x40880100 RXSTATE=0 lid_closed=0 handler_calls=1 restores=0 early_restores=0
+[  106.864191] surface_s2idle_fix: failsafe: lid was open at suspend, staying awake
+[  273.038825] surface_s2idle_fix: lid poll: RXSTATE 0->1 (PADCFG0=0x40880102)
+[  273.038854] surface_s2idle_fix: lid poll: suspending
+[  273.040414] surface_s2idle_fix: suspend #3: masked GPE 0x52, PADCFG0=0x40880102 RXINV=1 RXSTATE=1 lid_closed=1 failsafe_in_progress=1
+[  273.459451] surface_s2idle_fix: lps0_prepare: GPE 0x52 unmasked for lid wake
+[  278.964963] surface_s2idle_fix: lps0_restore: 1 checks during s2idle
+[  278.995227] surface_s2idle_fix: resume_noirq: PADCFG0 OK (0x40880100)
+[  279.113504] surface_s2idle_fix: early resume: PADCFG0 OK (0x40880100)
+[  279.113525] surface_s2idle_fix: early resume: unmasked GPE 0x52
+[  279.455193] surface_s2idle_fix: resume: rapid wake (912ms), streak=1
+[  279.455201] surface_s2idle_fix: resume: backoff active, failsafe in 4000ms
+[  279.455300] surface_s2idle_fix: resume #3: PADCFG0=0x40880100 RXSTATE=0 lid_closed=1 handler_calls=1 restores=0 early_restores=0
+[  283.469529] surface_s2idle_fix: failsafe: lid is currently open (RXSTATE=0), staying awake

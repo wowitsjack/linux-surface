@@ -1,0 +1,41 @@
+# Surface Laptop 5 - Working System Info
+# Captured: 2026-02-27
+
+## DMI
+Product Name:  Surface Laptop 5
+Product SKU:   Surface_Laptop_5_for_Business_1979
+Vendor:        Microsoft Corporation
+Board Name:    Surface Laptop 5
+BIOS Version:  22.102.143
+
+## Kernel
+Version:       6.18.7-surface-1
+Full:          Linux user-Surface-Laptop-5 6.18.7-surface-1 #1 SMP PREEMPT_DYNAMIC Mon Jan 26 00:16:20 UTC 2026 x86_64 GNU/Linux
+
+## Packages
+linux-image-surface          6.18.7-surface-1
+linux-headers-surface        6.18.7-surface-1
+
+## APT repo
+deb [arch=amd64] https://pkg.surfacelinux.com/debian release main
+GPG key: /etc/apt/trusted.gpg.d/linux-surface.gpg
+
+## Module info
+filename:       /lib/modules/6.18.7-surface-1/extra/surface_s2idle_fix.ko
+alias:          dmi:*:svnMicrosoftCorporation:pnSurfaceLaptop5:*
+description:    Fix s2idle death sleep on Surface Laptop 5
+license:        GPL
+srcversion:     F8D83D6E06441874C1A2BB9
+vermagic:       6.18.7-surface-1 SMP preempt mod_unload modversions
+
+## Autoload (/etc/modules-load.d/surface_s2idle_fix.conf)
+surface_gpe
+surface_s2idle_fix
+
+## Key hardware details
+SCI IRQ:       9
+Lid GPIO pin:  213
+Lid GPE:       0x52
+PADCFG base:   mapped via p2sb + community offset
+PADCFG0 normal: 0x40080100 (RXINV=0)
+PADCFG0 closed: 0x40880102 (RXINV=1, RXSTATE=1)
